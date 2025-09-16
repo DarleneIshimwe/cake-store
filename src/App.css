@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  text-align: center;
+  background: #03689473;
+  min-height: 100vh;
+}
+
+.navigation {
+  background: #f3ecec63;
+  padding: 15px;
+}
+
+.navigation a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero-img {
+  max-width: 400px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.contains {
+  flex: 1;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+h1{
+  color: white;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff5c5c;
+  color: white;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.buttons button:hover {
+  background: #e14c4c;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.contact-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-container h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  background: #ff5c5c;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #e14c4c;
+}
+.remove{
+  padding: 5px;
+  border: none;
+  color: wheat;
+  background-color: #ff5c5c;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.addTocart{
+   padding: 5px;
+  border: none;
+  color: wheat;
+  background-color: #ff5c5c;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.remove:hover{
+   background-color: #f06666;
+   cursor: pointer;
+}
+.addTocart:hover{
+   background-color: #f06666;
+   cursor: pointer;
+}
