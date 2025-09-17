@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 function ContactPage() {
-  const location = useLocation(); // <- gets the message from navigation
+  const location = useLocation(); 
   const prefillMessage = location.state?.message || "";
 
   const [formData, setFormData] = useState({
@@ -11,7 +11,7 @@ function ContactPage() {
     message: "",
   });
 
-  // Pre-fill the message when component mounts or message changes
+  
   useEffect(() => {
     if (prefillMessage) {
       setFormData((prev) => ({ ...prev, message: prefillMessage }));
@@ -75,4 +75,5 @@ function ContactPage() {
 }
 
 export default ContactPage;
+
 
