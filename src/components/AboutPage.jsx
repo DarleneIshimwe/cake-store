@@ -25,7 +25,7 @@ function About() {
     },
   ];
 
-  // Track which cakes are in cart
+  
   const [cart, setCart] = useState([]);
 
   const handleAddToCart = (id) =>{
@@ -69,3 +69,4 @@ function About() {
 }
 
 export default About;
+
